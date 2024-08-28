@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><h2>Sample layout 3</h2></title>
+<style type="text/css">
+*{
+padding=0px;
+margin=0px;
+box-sizing:border-box;
+}
+#logo-div{
+width:100%;
+height:100px;
+background-color:grey;
+text-align:center;
+line-height:100px;
+font-size:large;
+margin-bottom:10px;
+}#parent-div{
+width:100%;
+height:800px;
+background-color:white;
+box-sizing:border-box;
+
+margin-bottom:10px;
+}
+#sidebar-div{
+width:20%;
+height:800px;
+background-color:lightgrey;
+text-align:center;
+line-height:800px;
+font-size:large;
+margin-right:10%;
+float:left;
+contain:content;
+}
+#header-div{
+width:70%;
+height:200px;
+background-color:lightgrey;
+text-align:center;
+line-height:200px;
+font-size:large;
+float:right;
+margin-bottom:10px;
+}
+#body-div{
+width:70%;
+height:590px;
+background-color:lightgrey;
+text-align:center;
+line-height:590px;
+font-size:large;
+
+float:right;
+}
+.clearfix::after{
+content:"";
+display:block;
+clear:both;
+}
+#footer-div{
+
+width:=100%;
+height:50px;
+background-color:lightgrey;
+text-align:center;
+line-height:50px;
+font-size:large;
+}
+#final-div{
+width:90%;
+height:100%;
+margin:auto;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<div id="final-div">
+
+<div id="logo-div">
+Logo
+</div>
+<div id="parent-div" class="clearfix">
+<div id="sidebar-div">
+Side bar navigation 
+</div>
+<div id="header-div">
+Header/Banner
+</div>
+<div id="body-div">
+Body area
+</div>
+</div>
+<div id="footer-div">
+Footer
+</div>
+</div>
+
+</body>
+</html>
